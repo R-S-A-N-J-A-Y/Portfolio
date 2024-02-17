@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>MAIN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Protest+Revolution&family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/heropage.css">
+    <link rel="stylesheet" href="styles/resume.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/specialization.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/mobview.css">
+
+    
+</head>
+<body>
+
+    <div class="mode-specifier-container">
+        <button class="mode-specifier-button">
+            <img src="Icon/lightMode.png" class="mode-specifier-icon" alt="M">
+        </button>
+    </div>
+
+    <div class="sidebar">
+        <div class="element-1">
+            <button onclick="gotoLink('home')">
+                <img src="Icon/sidebar/home.png" alt="">
+            </button>
+        </div>
+        <div class="element-2">
+            <button onclick="gotoLink('resume')">
+                <img src="Icon/sidebar/resume.png" alt="">
+            </button>
+        </div>
+        <div class="element-3">
+            <button onclick="gotoLink('skillid')">
+                <img src="Icon/sidebar/skills.gif" alt="">
+            </button>
+        </div>
+        <div  class="element-4">
+            <button onclick="gotoLink('specs')">
+                <img src="Icon/sidebar/specs.png" alt="">
+            </button>
+        </div>
+        <div class="element-5">
+            <button onclick="gotoLink('contact')">
+                <img src="Icon/social/mail.png" alt="">
+            </button>
+        </div>
+    </div>
+    
+    <!--Heropage-->
+    <div id="home"  class="heropage">
+
+        <div class="my-pic-container"> 
+            <div class="my-pic-container-1">
+                <img src="" alt="">
+
+                <div class = "my-social-info">
+                    <button id="index-close" class="btn js-btn" onclick="changeClass(
+                        ['insta','LL','git'])"> 
+                        <div class="row">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </button> 
+
+                    <button id="insta" class="btn btn-1" onclick="gotoLink(this)" disabled> <img src="Icon/social/insta_icon.png" class="insta-icon" ></button>
+                    <button id="LL" class="btn btn-1" onclick="gotoLink(this)" disabled> <img src="Icon/social/LL_icon.png" class="LL-icon" alt=""></button>
+                    <button id="git" class="btn btn-1" onclick="gotoLink(this)" disabled> <img src="Icon/social/git.png" class="git-icon" alt=""> </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="about-me" >
+            <div class="about-me-1" >
+                <h1 data-aos="zoom-in-right" data-aos-duration="650">I'M SANJAY R</h1>
+                <h2 data-aos="zoom-in-left" data-aos-duration="650">WEB DEVELOPER</h2>
+                <p data-aos="zoom-in-down" data-aos-duration="650">
+                    I'm a Passionate Web developer focused on Crafting
+                    clean & user-Friendly Experiance. In a Realm of Web development
+                    , I strive to keep it Simple, Impactful and User-centric.
+                </p>
+            </div>
+        </div>
+        <div  id= "resume"></div>
+    </div>
+
+    <!--RESUME-->
+
+    
+    <div class="resume-container" >
+        <div class="resume-heads">
+            <h1  data-aos="zoom-in-up" data-aos-duration="650">MY&nbsp;&nbsp;<h1 class=" hidden"  style="color: aqua;" 
+                data-aos="zoom-in-up" data-aos-duration="650"> 
+                RESUME</h1></h1>
+            <p  data-aos="zoom-in-down" data-aos-duration="650">Some basic information <br>about myself</p>
+        </div>
+
+        <div class="resume-contents">
+            <div class="resume" >
+                <div class="item-1" 
+                data-aos="zoom-in-right" data-aos-duration="950">
+                    <p class="item-1-head">NAME : </p> 
+                    <p class="item-1-tail">SANJAY R</p>
+                </div>
+                <div class="item-1"
+                data-aos="zoom-in-right" data-aos-duration="950">
+                    <P class="item-1-head">COUNTRY : </P>
+                    <p class="item-2-tail">INDIAN</p>
+                </div>
+                <div class="item-1"
+                data-aos="zoom-in-right" data-aos-duration="950">
+                    <p class="item-1-head">Freelance : </p>
+                    <p class="item-3-tail">AVAILABLE</p>
+                </div>
+                <div class="item-1"
+                data-aos="zoom-in-right" data-aos-duration="950">
+                    <P class="item-1-head">LANGUAGE : </p> 
+                    <p class="item-4-tail">ENGLISH,TAMIL</p>
+                </div>
+            </div>
+    
+            <div class="resume-1">
+                <div class="item-1"
+                data-aos="zoom-in-left" data-aos-duration="950">
+                    <p class="item-1-head">DOB : </p> 
+                    <p class="item-1-tail">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22/02/2005</p>
+                </div>
+                <div class="item-1"
+                data-aos="zoom-in-left" data-aos-duration="950">
+                    <p class="item-1-head">ADDRESS :</p>
+                    <p class="item-2-tail">TAMILNADU, INDIA</p>
+                </div>
+                <div class="item-1"
+                data-aos="zoom-in-left" data-aos-duration="950">
+                    <p class="item-1-head">PHONE : </p>
+                    <p class="item-3-tail">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9787045901</p>
+                </div>
+                <div class="item-1"
+                data-aos="zoom-in-left" data-aos-duration="950">
+                    <p class="item-1-head">EMAIL : </p>
+                    <p class="item-4-tail">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sanjay.developer.official@gmail.com</p>
+                </div>
+            </div>
+    
+            <div class="more-info"
+            data-aos="zoom-in-up" data-aos-duration="950">
+                <p>More Info</p>
+                <div class="about-me-icon" >
+                    <button class="about-me-button" >
+                        <img id = "arrow" src="Icon/arrow.png" class="arrow-img" alt="arrow">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!--SKILLS-->
+    <div id="skillid"> </div>
+
+    <div  class="skills-div" data-aos="fade-up">
+        <img id="skill-design"  data-aos="zoom-out" src="icon/sidebar/skills.gif" alt="">
+        <div class="title-skills">
+            <h1 id="Skills" class="skills-2" data-aos="zoom-in-down" data-aos-duration="650">MY&nbsp;&nbsp;<h1 id="Skills" data-aos="zoom-in-down" data-aos-duration="650" style="color: aqua;"> SKILLS</h1></h1>
+        </div>
+        
+        
+        <div class="skills-container">
+
+            <div class="tech-skill">
+                <div class="tech-skill-container"  data-aos="zoom-in-right" data-aos-duration="650">
+                    <h2 data-aos="zoom-in-right" data-aos-duration="650">Technical<h2 data-aos="zoom-in-right" data-aos-duration="650"  style="color: aqua; margin-left: 10px;">Skills</h2></h2>
+
+                    <div class="tech-skill-div js-tech-skill"></div>
+                </div>
+            </div>
+
+            <div class="proff-skill">
+
+                <div class="proff-skill-container"  data-aos="zoom-in-left" data-aos-duration="900">
+                    <h2 data-aos="zoom-in-left" data-aos-duration="650">Professional <h2 data-aos="zoom-in-left" data-aos-duration="650" style="color: aqua; margin-left: 10px;">Skills</h2></h2>
+
+                <div class="circular-bar-grid js-skills-grid">
+                          
+                </div>
+                </div>              
+            </div>      
+        </div>
+    </div>
+
+    <!--Specialization-->
+    <div id="specs"></div>
+    <div  class="my-specialization-container" data-aos="zoom-in-down" data-aos-duration="650">
+        <img id="specs-design"  data-aos="zoom-out" src="icon/sidebar/specs.png" alt="">
+        <h1 >MY <h1 style="color: white; margin-left: 17px;">SPECIALIZATION</h1></h1>
+        <div class="my-specs-grid">
+
+            <div class="development" data-aos="zoom-in-right" data-aos-duration="650">
+                <h2>WEB - DEVELOPMENT</h2>
+                <P>"Crafting pixels into experiences: websites that inspire, engage, and adapt to your needs."</P>
+            </div>
+
+            <div class="designing" data-aos="zoom-in-left" data-aos-duration="650">
+                <h2>DESIGNING<br></h2>
+                <p>"Transforming Ideas into reality with the power of Canva, Figma and Photoshop Tools."</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!--Contact-->
+    <div id="contact" class="connect-container">
+        <div class="connect-div">
+            <div class="connect">
+                <h1  data-aos="zoom-in-left" data-aos-duration="650">LETS's&nbsp;&nbsp;CONNECT</h1>
+                <p  data-aos="zoom-in-left" data-aos-duration="650">Feel Free to Connect with me any time,I will get Back to you as soon as I can!</p><br><br>
+                <div class="name"  data-aos="zoom-in-left" data-aos-duration="650">
+                    <input type="text" name="name" required>
+                    <label for="">NAME* </label>
+                </div>
+
+                <div class="email"  data-aos="zoom-in-left" data-aos-duration="650">
+                    <input type="email" name="email" required>
+                    <label for="">EMAIL* </label>
+                </div>
+
+                <div class="phone"  data-aos="zoom-in-left" data-aos-duration="650">
+                    <input type="number" name="phone" required>
+                    <label for="">PHONE* </label>
+                </div>
+
+                <div class="message"  data-aos="zoom-in-left" data-aos-duration="650">
+                    <input type="text" required>
+                    <label for="">MESSAGE</label>
+                </div>
+
+                <button class="but">
+                    <p>SEND</p>
+                </button> 
+            </div>
+
+            <p class="follow-me-txt"  data-aos="zoom-in-right" data-aos-duration="650">FOLLOW ME</p>
+
+            <div class="follow-me">
+                <button id="insta" onclick="gotoLink(this)" > <img id="insta-1" src="Icon/social/insta_icon.png"></button>
+                <button id="LL" onclick="gotoLink(this)" > <img src="Icon/social/LL_icon.png"  alt=""></button>
+            </div>
+
+            <div class="contact">
+                <h1  data-aos="zoom-in-right" data-aos-duration="650">Contact Me</h1>
+                    <div>
+                    <button onclick="gotoLink('mail')"><img src="Icon/social/mail.png" alt=""></button>
+                    <a href="mailto:sanjay.developer.official@gmail.com" >sanjay.developer.official@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <script src = "script/main.js"></script>
+    <script src = "script/skills.js"></script>
+    <script src = "script/goto.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
