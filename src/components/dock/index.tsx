@@ -54,11 +54,11 @@ const FloatingDockMobile = ({
               >
                 <Link
                   href={item.href}
-                  className="h-10 w-10 rounded-full bg-neutral-900 flex items-center justify-center"
+                  className="relative h-10 w-10 overflow-hidden rounded-full bg-neutral-900 flex items-center justify-center"
                 >
                   <div
                     className={
-                      item.title === "Asshhh" ? "h-full w-full" : "h-4 w-4"
+                      item.title === "Myself" ? "h-full w-full" : "h-4 w-4"
                     }
                   >
                     {item.icon}
@@ -163,7 +163,7 @@ function IconContainer({
           {/* Render Icon Instead of Text */}
           <motion.div
             className={
-              title === "Asshhh" ? "w-full h-full" : "text-white text-2xl"
+              title === "Myself" ? "w-full h-full" : "text-white text-2xl"
             }
           >
             {icon}

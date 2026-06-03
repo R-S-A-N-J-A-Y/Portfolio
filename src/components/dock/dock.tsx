@@ -2,43 +2,61 @@
 
 import React from "react";
 import { FloatingDock } from "../dock";
-import { IconHome, IconCode, IconUser, IconMail } from "@tabler/icons-react";
+import Image from "next/image";
+import {
+  IconSmartHome,
+  IconTools,
+  IconSourceCode,
+  IconNotebook,
+  IconBrandAdobeAfterEffect,
+  IconMessageCircle,
+} from "@tabler/icons-react";
 
 const dock = () => {
   const links = [
     {
       title: "Home",
-      icon: <IconHome className="h-full w-full" />,
+      icon: <IconSmartHome className="h-full w-full" />,
       href: "/",
     },
     {
       title: "Skills",
-      icon: <IconCode className="h-full w-full" />,
+      icon: <IconTools className="h-full w-full" />,
       href: "/skills",
     },
     {
       title: "Projects",
-      icon: <IconUser className="h-full w-full" />,
+      icon: <IconSourceCode className="h-full w-full" />,
       href: "/projects",
     },
     {
       title: "Myself",
-      icon: <IconMail className="h-full w-full" />,
+      icon: (
+        <div className="relative w-full h-full">
+          <Image
+            src="/Images/myself.png"
+            alt="Sanjay"
+            fill
+            sizes="(max-width: 768px) 40px, 48px"
+            className="object-cover rounded-full"
+          />
+        </div>
+      ),
       href: "/myself",
     },
     {
       title: "Blog",
-      icon: <IconUser className="h-full w-full" />,
+      icon: <IconNotebook className="h-full w-full" />,
       href: "/blog",
     },
     {
       title: "AfterEffects",
-      icon: <IconMail className="h-full w-full" />,
+      icon: <IconBrandAdobeAfterEffect className="h-full w-full" />,
       href: "/after-effects",
     },
     {
       title: "Contact",
-      icon: <IconMail className="h-full w-full" />,
+      icon: <IconMessageCircle className="h-full w-full" />,
       href: "/contact",
     },
   ];
